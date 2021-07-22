@@ -5,11 +5,9 @@ require("class.phpmailer.php");
 require("class.smtp.php");
 
 // Valores enviados desde el formulario
-if ( !isset($_POST["MotivoConsulta"]) || !isset($_POST["name"]) || !isset($_POST["mail"])  || !isset($_POST["phone"]) || !isset($_POST["message"]) ) {
+if ( !isset($_POST["name"]) || !isset($_POST["mail"])  || !isset($_POST["phone"]) || !isset($_POST["message"]) ) {
     die ("Es necesario completar todos los datos del formulario");
 }
-
-$motivo = $_POST["MotivoConsulta"];
 
 $nombre = $_POST["name"];
 
@@ -61,8 +59,6 @@ $mail->Body = "
 <p>Email: {$email}</p>
 
 <p>Telefono: {$telefono}</p>
-
-<p>Motivo: {$motivo}</p>
 
 <p>Mensaje: {$mensaje}</p>
 
