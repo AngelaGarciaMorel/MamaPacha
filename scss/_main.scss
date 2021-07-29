@@ -17,6 +17,9 @@
 .p-24{
     padding: 24.5px;
 }
+.mt-5{
+    margin-top: 5em;
+}
 .nav_social_media_list{
     list-style: none;
     display: flex;
@@ -37,12 +40,23 @@
 .containter_grid_main{
     display: grid;
     grid-template-columns: repeat(2, 50%);
-    grid-template-areas: 'cardGeo parrafoQuienSoy'
+    grid-template-areas: 
+    'cardGeo nombre'
+    'cardGeo parrafoQuienSoy'
     'cardGeo certificados'
     'cardGeo parrafoMamaPacha';
 }
 .card_geo{
     grid-area: cardGeo;
+}
+.nombre{
+    grid-area: nombre;
+    position: relative;
+    right: 1em;
+    bottom: 0.5em;
+
+    font-size: 5.5em;
+
 }
 .parrafo_quien_soy{
     grid-area: parrafoQuienSoy;
