@@ -7,72 +7,79 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
         integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
         crossorigin="anonymous">
-        <link rel="shortcut icon" href="media/images/favicon.ico" type="image/x-icon">        
+    <link rel="shortcut icon" href="media/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">       
     <title>Mamá Pacha | Home</title>
 </head>
 <body>
-    <header class=""> <!--ajustar contenedor para el ancho como en figma-->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="index.html">
-                <img src="media/images/logo.png" width="250" height="250" alt="Mamá Pacha">
-            </a>
-            <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Sobre mí<span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Ayurveda</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Consultas</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contacto.html">Contacto</a>
-                </li>
-            </ul>
-            <div> <!--Verificar si nos va a servir así o por fuera del nav-->
-                <ul>
-                    <li>
-                        <a href="">
-                            <img src="" alt="Instagram mamá pacha">
-                        </a><!--Instagram-->
-                    </li>
-                    <li>
-                        <a href="">
-                            <img src="" alt="Facebook mamá pacha">
-                        </a> <!--Facebook-->
-                    </li>
-                    <li>
-                        <a href="">
-                            <img src="" alt="Linkedin mamá pacha">
-                        </a> <!--Linkedin-->
-                    </li>
-                </ul>
-            </div>
-        </nav>   
-    </header>
+    <div class="border_bottom_shadow">
+        <header class="container">
+            <nav class="navbar navbar-expand-lg">
+                <a class="navbar-brand" href="index.html">
+                    <img src="media/images/logos/logo.png" alt="Mamá Pacha">
+                </a>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link gray1_letter" href="#">Sobre mí<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link gray1_letter" href="#">Ayurveda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link gray1_letter" href="#">Consultas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link gray1_letter" href="contacto.html">Contacto</a>
+                        </li>
+                        <ul class="nav_social_media_list">
+                            <li>
+                                <a href="">
+                                    <img src="media/images/logos/instagram-transparent.png" alt="Instagram mamá pacha">
+                                </a><!--Instagram-->
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="media/images/logos/facebook-transparent.png" alt="Facebook mamá pacha">
+                                </a> <!--Facebook-->
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="media/images/logos/linkedin-transparent.png" alt="Linkedin mamá pacha">
+                                </a> <!--Linkedin-->
+                            </li>
+                        </ul>
+                    </ul>
+                </div>
+            </nav>   
+        </header>
+    </div>    
     <main>
         <div>
-            <h3>Georgina Zino</h3>
+            <h3 class="gray2_letter"><span class="verde_mama">Geo</span>rgina Zino</h3><!--aplicar float-->
         </div>
-        <div><!--Contenedor de la futura grid-->
-            <div>
-                <img src="media/images/cardGeo.jpg" alt="Georgina Zino">
+        <div class="container containter_grid_main">
+            <div class="card_geo">
+                <img src="media/images/cardGeo.png" alt="Georgina Zino" class="w-100">
             </div>
-            <div>
-                <p>
+            <p class="parrafo_quien_soy gray2_letter fontS_regular text-justify">
                     Soy licenciada en nutrición con posgrado en Medicina Ayurveda y en alimentación basada en plantas.
                     Estudié nutrición en la universidad del Litoral y años después, viajando por el mundo, encontré mi 
                     pasión, el Ayurveda. Fué así que cuando regresé a Argentina me fui a vivir a Buenos Aires, donde hice
-                    el posgrado de Medicina Ayurveda para Profesionales de la salud en la <strong>Fundación de salud Ayurveda Prema</strong>
-                    y me especialice en alimentación vegetariana y vegana en <strong>AADYND</strong>
-                </p>
-            </div>
-            <div>
+                    el posgrado de Medicina Ayurveda para Profesionales de la salud en la <strong class="verde_mama">Fundación de salud Ayurveda Prema</strong>
+                    y me especialice en alimentación vegetariana y vegana en <strong class="verde_mama">AADYND</strong>
+            </p>
+            <div class="certificados">
                 <img src="media/images/certificado1.png" alt="">
-                <img src="media/images/certificado2.jpg" alt="">
+                <img src="media/images/certificado2.png" alt="" class="p-24">
             </div>
+            <p class="parrafo_mama_pacha gray2_letter fontS_regular text-justify">
+                    Mamá Pacha surge luego de haber sido mamá de mi primer hijo, en 2019, y de haber vuelto a vivir en mi ciudad natal, Paraná (Entre Ríos) en 2020.
+                    A través de Mamá Pacha busco integrar la sabiduría del Ayurveda, complementada con mis conocimientos en nutrición y alimentación basada en plantas;
+                    junto con la maternidad, que me regaló un nuevo enfoque de la vida, y a todas las experiencias de aprendizaje que obtuve a partir diferentes herramientas
+                    como el chamanismo, el reiki, las constelaciones familiares, el tarot; que me ayudaron a expandir y a entender que somos más que un cuerpo físico, y que el
+                    abordaje de la salud debe ser considerado de forma integral.
+            </p>
         </div>
         <div>
             <img src="media/images/logo.png" width="1000" height="1000" alt="imagen de Mamá Pacha">
@@ -229,16 +236,14 @@
                         Se trata de 8 encuentros semanales, de una hora, con modalidad online o presencial, en grupos pequeños 
                         (máximo 5 participantes), donde trabajaremos técnicas para aumentar el nivel de consciencia en la vida 
                         cotidiana y estimular la conexión con la panza, entendiendo que el bebé se nutre de todas las experiencias
-                         que vive, desde su concepción hasta el momento en el que llega a este mundo. Trabajaremos con meditaciones 
-                         y técnicas de armonización. Se compartirá material escrito y se ofrecerán actividades semanales para estimular 
-                         el trabajo consciente en casa.
+                        que vive, desde su concepción hasta el momento en el que llega a este mundo. Trabajaremos con meditaciones 
+                        y técnicas de armonización. Se compartirá material escrito y se ofrecerán actividades semanales para estimular 
+                        el trabajo consciente en casa.
                     </p>
                 </div>
             </div>
         </div>
-    </main>
-
-    
+    </main>    
     <footer>
         <div>
             <h4>FRASE PARA INVITAR A QUE CONSULTEN</h4>

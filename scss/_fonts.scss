@@ -1,0 +1,29 @@
+body{
+	font-family: $fontR;
+	font-weight: $fontR-regular;
+}
+.fontR_light_italic{
+	font-family: $fontR;
+	font-weight: $fontR-light-italic;
+}
+.fontR_regular{
+	font-family: $fontR;
+	font-weight: $fontR-regular;
+}
+.fontR_medium{
+	font-family: $fontR;
+	font-weight: $fontR-medium;
+}
+.fontR_bold{
+	font-family: $fontR;
+	font-weight: $fontR-bold;
+}
+
+.fontS_regular{
+	font-family: $fontS;
+	font-weight: 400;
+}
+.fontS_bold{
+	font-family: $fontS;
+	font-weight: 700;
+}

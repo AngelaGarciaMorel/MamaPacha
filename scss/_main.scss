@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.w-100{
+    width: 100%;
+}
+.h-100{
+    height: 100%;
+}
+.gray1_letter{
+    color: #858585;
+}
+.gray2_letter{
+    color: #6F6F6F;
+}
+.p-24{
+    padding: 24.5px;
+}
+.nav_social_media_list{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 0;
+    padding: 0;
+    li{
+        margin-left: 1em;
+    }
+}
+.border_bottom_shadow{
+    box-shadow: 1px 1px 10px 1px #8585851c;
+}
+.verde_mama{
+    color:#92C83E;
+}
+.containter_grid_main{
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-areas: 'cardGeo parrafoQuienSoy'
+    'cardGeo certificados'
+    'cardGeo parrafoMamaPacha';
+}
+.card_geo{
+    grid-area: cardGeo;
+}
+.parrafo_quien_soy{
+    grid-area: parrafoQuienSoy;
+}
+.certificados{
+    grid-area: certificados;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+.parrafo_mama_pacha{
+    grid-area: parrafoMamaPacha;
+}
