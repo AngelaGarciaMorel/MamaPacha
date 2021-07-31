@@ -27,3 +27,16 @@ body{
 	font-family: $fontS;
 	font-weight: 700;
 }
+.fontRosa_regular_italic{
+	font-family: $fontRosa;
+	font-weight: $fontRosa-regular;
+	font-style: $fontRosa-regular-italic-style;
+}
+.fontRosa_regular{
+	font-family: $fontRosa;
+	font-weight: $fontRosa-regular;
+}
+
+.font_size-20{
+	font-size: xx-large;
+}

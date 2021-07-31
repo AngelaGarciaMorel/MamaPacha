@@ -20,6 +20,12 @@
 .mt-5{
     margin-top: 5em;
 }
+.mt-3{
+    margin-top: 3em;
+}
+.mt-10{
+    margin-top: 10em;
+}
 .nav_social_media_list{
     list-style: none;
     display: flex;
@@ -36,6 +42,9 @@
 }
 .verde_mama{
     color:#92C83E;
+}
+.marron_mama{
+    color: #AA8472;
 }
 .containter_grid_main{
     display: grid;
@@ -69,4 +78,7 @@
 }
 .parrafo_mama_pacha{
     grid-area: parrafoMamaPacha;
+}
+.boxshadow {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
