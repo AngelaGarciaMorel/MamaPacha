@@ -23,10 +23,10 @@
                         <a class="nav-link gray1_letter" href="#">Sobre mí<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link gray1_letter" href="#">Ayurveda</a>
+                        <a class="nav-link gray1_letter" href="#ayurveda">Ayurveda</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link gray1_letter" href="#">Consultas</a>
+                        <a class="nav-link gray1_letter" href="#consulta">Consultas</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link gray1_letter" href="contacto.html">Contacto</a>
@@ -53,26 +53,30 @@
         </nav>   
     </header>
 </div> 	
-    <main class="">
-		<h1 class="">Contacto</h1>
-		<div class="">
-			<div>
-				<p>mamapacha@gmail.com</p>
-				<p>Teléfono/Wpp (+54 9)</p>
-			</div>
+    <main class=" gray2_letter fontS_regular mt-5">
+		<h1 class="textCenter font_size-xxl">¿Te gustaría saber más sobre nutrición Ayurveda?</h1>
+        <div class="container d-flex justify-content-between verde_mama">
+            <p class="p-2">mamapacha@gmail.com</p>
+            <p class="p-2">+54 (9) 34 3620-9258</p>
+        </div>
+		<div class="container ">
 			<!-- Sección Formulario Contacto-->
-			<section class="">
-				<form class="" method="post" action="sendmail.php">
-					<input class="" type="text" name="name" value="Nombre Completo *">
-					<input class="" type="text" name="mail" value="Email *">
-					<input class="" type="text" name="phone" value="Número de Teléfono">				
-					<textarea class="" name="message"  cols="50" rows="9" value="Escribe tu Mensaje *"></textarea>
-					<div class="TextCenter">
-						<input class="MarginTopBox10 Boton" type="submit" name="Enviar">
-					</div>
+                <form class="  d-flex flex-column ">
+				<!--<form class="d-flex flex-column " method="post" action="#sendmail.php">-->
+					<input class="mt-3 bgc_text gray2_letter fontS_regular" type="text" name="name" value="Nombre Completo *">
+					<input class="mt-3 bgc_text gray2_letter fontS_regular" type="text" name="mail" value="Email *">
+					<input class="mt-3 bgc_text gray2_letter fontS_regular" type="text" name="phone" value="Número de Teléfono">				
+					<textarea class="mt-3 bgc_text gray2_letter fontS_regular" name="message"  cols="50" rows="4" >Mensaje</textarea>
+                    <div class="mt-5 mb-10 textCenter">
+                        <input class=" boxshadow p-12-80 bgc_button marron_mama fontRosa_regular_italic mt-3" type="submit" name="Enviar">
+                    </div>					
 			</form>
-			</section>
 		</div>
 	</main>
+    <footer>
+        <div class="gray2_letter fontS_regular">
+            <p class="textCenter ">© 2020 Derechos reservados MamáPacha website</p>
+        </div>
+    </footer>    
 </body>
 </html>

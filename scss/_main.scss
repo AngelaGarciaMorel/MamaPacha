@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
 }
+a {
+    text-decoration: none;
+}
 .w-100{
     width: 100%;
 }
@@ -14,6 +17,9 @@
 .p-5-em{
     padding: 5em;
 }
+.p-12-80{
+    padding: 12px 80px 12px 80px;
+}
 .mt-5{
     margin-top: 5em;
 }
@@ -23,6 +29,17 @@
 .mt-10{
     margin-top: 10em;
 }
+.mb-10{
+    margin-bottom: 10em;
+}
+/*.nav-zi {
+	background-color: white;
+	opacity: 0.98;
+	position: fixed;
+	top: 0;
+	width: 80%;
+	z-index: 1;
+}*/
 .nav_social_media_list{
     list-style: none;
     display: flex;
@@ -121,4 +138,19 @@
 } 
 .jarra{
     grid-area: jarra;
+}
+.textCenter {
+    text-align: center;
+}
+.bgc_container {
+    background-color: #eeeeee;
+}
+.bgc_button {
+    background-color: #ffffff;
+    border: #ffffff;
+}
+.bgc_text {
+    background-color: #eeeeee;
+    border: #eeeeee;
+    padding: 4px 0 4px 0;
 }
