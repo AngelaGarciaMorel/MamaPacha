@@ -23,23 +23,18 @@ a {
 .mt-5{
     margin-top: 5em;
 }
+.mt-9{
+    margin-top: 9em;
+}
 .mt-3{
     margin-top: 3em;
 }
 .mt-10{
     margin-top: 10em;
 }
-.mb-10{
-    margin-bottom: 10em;
+.mb-5{
+    margin-bottom: 5em;
 }
-/*.nav-zi {
-	background-color: white;
-	opacity: 0.98;
-	position: fixed;
-	top: 0;
-	width: 80%;
-	z-index: 1;
-}*/
 .nav_social_media_list{
     list-style: none;
     display: flex;
@@ -53,6 +48,9 @@ a {
 }
 .border_bottom_shadow{
     box-shadow: 1px 1px 10px 1px #8585851c;
+}
+.fix-bc {    
+    background-color: #ffffff;
 }
 .verde_mama{
     color:#92C83E;
@@ -153,4 +151,24 @@ a {
     background-color: #eeeeee;
     border: #eeeeee;
     padding: 4px 0 4px 0;
+}
+.bkg-imagen {
+    background-image: url('../media/images/fondo.png');
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #ffffff;
+}
+.bkg-imagenC {
+    background-image: url('../media/images/fondoContacto.png');
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #ffffff;
 }
