@@ -32,8 +32,14 @@ a {
 .mt-10{
     margin-top: 10em;
 }
+.mb-3{
+    margin-bottom: 3em;
+}
 .mb-5{
     margin-bottom: 5em;
+}
+.background_gray{
+    background: rgba(196, 196, 196, 0.1);
 }
 .nav_social_media_list{
     list-style: none;
@@ -52,44 +58,40 @@ a {
 .fix-bc {    
     background-color: #ffffff;
 }
-.verde_mama{
-    color:#92C83E;
-}
-.marron_mama{
-    color: #AA8472;
-}
+
 .containter_grid_main{
     display: grid;
+    grid-gap: 3em;
     grid-template-columns: repeat(2, 50%);
     grid-template-areas: 
-    'cardGeo nombre'
-    'cardGeo parrafoQuienSoy'
-    'cardGeo certificados'
+    'cardGeo logoMain'
     'cardGeo parrafoMamaPacha';
 }
 .card_geo{
     grid-area: cardGeo;
 }
-.nombre{
-    grid-area: nombre;
-    position: relative;
-    right: 1em;
-    bottom: 0.5em;
-
-    font-size: 5.5em;
-
-}
-.parrafo_quien_soy{
-    grid-area: parrafoQuienSoy;
-}
-.certificados{
-    grid-area: certificados;
-    display: flex;
-    justify-content: center;
-    justify-items: center;
+.logo_main{
+    grid-area: logoMain;
+    text-align: center;
 }
 .parrafo_mama_pacha{
     grid-area: parrafoMamaPacha;
+    background: rgba(196, 196, 196, 0.1);
+
+    padding: 2.5em;
+}
+.grid-terapias{
+    display: grid;
+    grid-gap: 3em;
+    grid-template-columns: repeat(2, fr);
+    grid-template-areas: 
+    'basadaEnPlantas embarazo';
+}
+.basada_en_plantas{
+    grid-area: basadaEnPlantas;
+}
+.embarazo{
+    grid-area: embarazo;
 }
 .boxshadow {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
