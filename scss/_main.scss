@@ -2,6 +2,50 @@
     margin: 0;
     padding: 0;
 }
+.carga_web{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+    justify-content: center;
+    animation-name: aparecer;
+    animation-duration: 4s;
+}
+@keyframes aparecer{
+    0% {opacity: 0;}
+    50% {opacity: 100%;}
+    75% {opacity: 100%;}
+    100%{opacity: 0;}
+}
+.imagenes_carga{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.hojas{
+    display: flex;
+    flex-direction: row;
+}
+.hoja_izquierda{
+    animation-name: rotacion-izquierda;
+    animation-delay: 1s;
+    animation-duration: 2s;
+}
+@keyframes rotacion-izquierda{
+    50%{transform: rotate(-30deg);}
+    100%{transform: rotate(0deg);}
+}
+.hoja_derecha{
+    animation-name: rotacion-derecha;
+    animation-delay: 1s;
+    animation-duration: 2s;
+}
+@keyframes rotacion-derecha{
+    50%{transform: rotate(-40deg);}
+    100%{transform: rotate(0deg);}
+}
 a {
     text-decoration: none;
 }
