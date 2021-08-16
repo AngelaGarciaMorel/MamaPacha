@@ -330,8 +330,8 @@ a {
     margin: 1em; }
   .grid-geo {
     display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-areas: 'titGeo descGeo' 'fotoGeo descGeo'; }
+    grid-template-columns: 100%;
+    grid-template-areas: 'fotoGeo'  'titGeo' 'descGeo'; }
   .titGeo {
     grid-area: titGeo; }
     .titGeo h2 {
