@@ -206,3 +206,125 @@ a {
 .li-leave{
     list-style: url(../media/images/logos/li.png);
 }
+
+.grid-ayurveda{
+    display: grid;
+    grid-gap: 3em;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: 
+    'ayurvExpl fotoPiedra';
+}
+.ayurvExpl{
+    grid-area: ayurvExpl;
+}
+.fotoPiedra{
+    grid-area: fotoPiedra;
+}
+
+.grid-geo{
+    display: grid;
+    grid-gap: 3em;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: 
+    'fotoGeo titGeo'
+    'fotoGeo descGeo';
+}
+.titGeo{
+    grid-area: titGeo;
+    h2 {
+        font-size: 5em;
+    }
+}
+.fotoGeo{
+    grid-area: fotoGeo;
+}
+.descGeo{
+    grid-area: descGeo;
+}
+#hoja-der {
+    visibility: hidden;
+}
+#hoja-izq {
+    visibility: hidden;
+}
+$breakpoint-tablet: 768px;
+@media (max-width: $breakpoint-tablet) {
+    .containter_grid_main{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-areas: 
+        'logoMain'
+        'parrafoMamaPacha';
+    }
+    .parrafo_mama_pacha{
+        grid-area: parrafoMamaPacha;
+        background: rgba(196, 196, 196, 0.1);
+        margin: 2em;
+    }
+
+    .grid-terapias{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-areas: 
+        'basadaEnPlantas'
+        'embarazo';
+    }
+    .basada_en_plantas{
+        grid-area: basadaEnPlantas;
+        margin: 1em;
+    }
+    .embarazo{
+        grid-area: embarazo;
+        margin: 1em;
+    }
+    .grid-ayurveda{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-areas: 
+        'fotoPiedra'
+        'ayurvExpl';
+    }
+    .ayurvExpl{
+        grid-area: ayurvExpl;
+        margin: 1em;
+    }
+    .fotoPiedra{
+        grid-area: fotoPiedra;
+        margin: 1em;
+    }
+    .grid-geo{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-areas: 
+        'titGeo descGeo'
+        'fotoGeo descGeo';
+    }
+    .titGeo{
+        grid-area: titGeo;
+        h2 {
+            font-size: 2em;
+        }
+    }
+    .descGeo{
+        grid-area: descGeo;
+        margin: 1em;
+    }
+    .bkg-imagen {
+        background-image: none;
+    }
+    .bkg-imagenC {
+        background-image: none;
+    }
+    #hoja-der {
+        visibility: visible;
+    }
+    #hoja-izq {
+        visibility: visible;
+    }
+    .p-12-80 {
+        padding: 12px 20px 12px 20px;
+    }
+    .mt-10 {
+        margin-top: 5em;
+    }
+}
