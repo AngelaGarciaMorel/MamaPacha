@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
 }
+html{
+    scroll-behavior: smooth;
+}
 .carga_web{
     display: flex;
     height: 100vh;
@@ -34,8 +37,12 @@
     animation-duration: 2s;
 }
 @keyframes rotacion-izquierda{
-    50%{transform: rotate(-30deg);}
-    100%{transform: rotate(0deg);}
+    50% {
+        transform: rotate(-30deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
 }
 .hoja_derecha{
     animation-name: rotacion-derecha;
@@ -43,8 +50,27 @@
     animation-duration: 2s;
 }
 @keyframes rotacion-derecha{
-    50%{transform: rotate(-40deg);}
-    100%{transform: rotate(0deg);}
+    50% {
+        transform: rotate(-40deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+.animado{
+    opacity: 0;
+    transition: all 0.5s;
+}
+.hacia-arriba{
+    animation: haciaArriba 1s;
+}
+@keyframes haciaArriba{
+    0% {
+        transform: translateY(60px);
+    }
+    100%{
+        transform: translateY(0);
+    }
 }
 a {
     text-decoration: none;
