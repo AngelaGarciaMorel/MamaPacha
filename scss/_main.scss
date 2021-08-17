@@ -61,6 +61,18 @@ html{
     opacity: 0;
     transition: all 0.5s;
 }
+.animado-2{
+    opacity: 0;
+    transition: all 0.5s;
+}
+.animado-3{
+    opacity: 0;
+    transition: all 0.5s;
+}
+.animado-4{
+    opacity: 0;
+    transition: all 0.5s;
+}
 .hacia-arriba{
     animation: haciaArriba 1s;
 }
@@ -72,6 +84,53 @@ html{
         transform: translateY(0);
     }
 }
+.derecha-izquierda{
+    animation: derechaIzquierda 1s;
+}
+@keyframes derechaIzquierda{
+    0% {
+        transform: translateX(60px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+.izquierda-derecha{
+    animation: izquierdaDerecha 1s;
+}
+@keyframes izquierdaDerecha{
+    0% {
+        transform: translateX(-60px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+.boton-animado{
+    opacity: 0;
+    transition: all 0.5s;;
+}
+.escala{
+    animation: escala 1s;
+}
+@keyframes escala{
+    0% {
+        transform: scale(1, 1);
+    }
+    25% {
+        transform: scale(1.2, 1.2);
+    }
+    50% {
+        transform: scale(1, 1);
+    }
+    75% {
+        transform: scale(1.2, 1.2);
+    }
+    100% {
+        transform: scale(1, 1);
+    }
+}
+
 a {
     text-decoration: none;
 }
