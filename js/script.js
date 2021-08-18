@@ -4,7 +4,6 @@ const body = document.querySelector('body')
 let objetoAnimado = document.querySelectorAll('.animado')
 const objetoAnimado2 = document.querySelector('.animado-2')
 const objetoAnimado3 = document.querySelector('.animado-3')
-let botonesAnimados = document.querySelectorAll('.boton-animado')
 
 
 
@@ -42,17 +41,6 @@ function scrollAlto3(){
         objetoAnimado3.classList.add('derecha-izquierda')
     }
 }
-function scrollAlto4(){
-    let scrollTop = document.documentElement.scrollTop;
-    for ( let i = 0; i < botonesAnimados.length; i++){
-        let alturaObjeto = botonesAnimados[i].offsetTop;
-        if(alturaObjeto - 800 < scrollTop){
-            botonesAnimados[i].style.opacity = 1;
-            botonesAnimados[i].classList.add('escala')
-        }
-    }
-}
 window.addEventListener('scroll', scrollAlto);
 window.addEventListener('scroll', scrollAlto2);
 window.addEventListener('scroll', scrollAlto3);
-window.addEventListener('scroll', scrollAlto4);

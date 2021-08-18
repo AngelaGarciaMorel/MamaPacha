@@ -5,6 +5,16 @@
 html{
     scroll-behavior: smooth;
 }
+button:hover{
+    background-color: #AA8472;
+    color: white;
+    transition: 0.5s;
+}
+.input-form:hover{
+    background-color: #AA8472;
+    color: white;
+    transition: 0.5s;
+}
 .carga_web{
     display: flex;
     height: 100vh;
@@ -106,31 +116,6 @@ html{
         transform: translateX(0);
     }
 }
-.boton-animado{
-    opacity: 0;
-    transition: all 0.5s;;
-}
-.escala{
-    animation: escala 1s;
-}
-@keyframes escala{
-    0% {
-        transform: scale(1, 1);
-    }
-    25% {
-        transform: scale(1.2, 1.2);
-    }
-    50% {
-        transform: scale(1, 1);
-    }
-    75% {
-        transform: scale(1.2, 1.2);
-    }
-    100% {
-        transform: scale(1, 1);
-    }
-}
-
 a {
     text-decoration: none;
 }
@@ -170,6 +155,12 @@ a {
 }
 .mt-10{
     margin-top: 10em;
+}
+.mt-14{
+    margin-top: 14em;
+}
+.mt-16{
+    margin-top: 16.3em;
 }
 
 .mb-3{
