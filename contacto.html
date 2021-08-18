@@ -12,28 +12,31 @@
     <title>Mamá Pacha | Contacto</title>
 </head>
 <body class="bkg-imagenC">
-    <div class="border_bottom_shadow fixed-top fix-bc">
+    <div class="border_bottom_shadow fix-bc fixed-top">
         <header class="container ">
-            <nav class="navbar navbar-expand-lg ">
+            <nav class="navbar navbar-light navbar-expand-lg" >
                 <a class="navbar-brand" href="index.html">
                     <img src="media/images/logos/logo.png" alt="Mamá Pacha">
                 </a>
-                <div class="collapse navbar-collapse justify-content-end " id="navbarNav">
-                    <ul class="navbar-nav">
+                <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon" ></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link marron_mama" href="index.html#mama-pacha">Mamá Pacha<span class="sr-only">(current)</span></a>
+                            <a class="nav-link marron_mama" style="color: #AA8472;" href="index.html#mama-pacha">Mamá Pacha<span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link marron_mama" href="index.html#sobre-mi">Sobre mí<span class="sr-only">(current)</span></a>
+                            <a class="nav-link marron_mama" style="color: #AA8472;" href="index.html#sobre-mi">Sobre mí<span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link marron_mama" href="index.html#ayurveda">Ayurveda</a>
+                            <a class="nav-link marron_mama" style="color: #AA8472;" href="index.html#ayurveda">Ayurveda</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link marron_mama" href="index.html#consultas">Consultas</a>
+                            <a class="nav-link marron_mama" style="color: #AA8472;" href="index.html#consultas">Consultas</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link marron_mama" href="contacto.html">Contacto</a>
+                            <a class="nav-link marron_mama" style="color: #AA8472;" href="contacto.html">Contacto</a>
                         </li>
                         <ul class="nav_social_media_list">
                             <li>
@@ -56,7 +59,7 @@
                 </div>
             </nav>   
         </header>
-    </div>   
+    </div>
     <div class="mt-8"></div> 
     <main class=" gray2_letter fontS_regular mt-5">
 		<h1 class="textCenter font_size-xxl gris_mama">¿Te gustaría saber más sobre nutrición Ayurveda?</h1>
@@ -68,11 +71,11 @@
 			<!-- Sección Formulario Contacto-->
                 <form class="  d-flex flex-column ">
 				<!--<form class="d-flex flex-column " method="post" action="#sendmail.php">-->
-					<input class="mt-3 bgc_text gray2_letter fontS_regular" type="text" name="name" value="Nombre*" onFocus="if (this.value=='Nombre*') this.value='';">
-					<input class="mt-3 bgc_text gray2_letter fontS_regular" type="text" name="mail" value="Email*" onFocus="if (this.value=='Email*') this.value='';">
-					<input class="mt-3 bgc_text gray2_letter fontS_regular" type="text" name="phone" value="Número de Teléfono" onFocus="if (this.value=='Número de Teléfono') this.value='';">				
-					<textarea class="mt-3 bgc_text gray2_letter fontS_regular" name="message"  cols="50" rows="4" onFocus="if (this.value=='Mensaje') this.value='';">Mensaje</textarea>
-                    <div class="mt-5 mb-5 textCenter">
+					<input class="mt-3 bgc_text gray2_letter fontS_regular " type="text" name="name" value="Nombre*" onFocus="if (this.value=='Nombre*') this.value='';">
+					<input class="mt-3 bgc_text gray2_letter fontS_regular mt-0" type="text" name="mail" value="Email*" onFocus="if (this.value=='Email*') this.value='';">
+					<input class="mt-3 bgc_text gray2_letter fontS_regular mt-0" type="text" name="phone" value="Número de Teléfono" onFocus="if (this.value=='Número de Teléfono') this.value='';">				
+					<textarea class="mt-3 bgc_text gray2_letter fontS_regular mt-0" name="message"  cols="50" rows="4" onFocus="if (this.value=='Mensaje') this.value='';">Mensaje</textarea>
+                    <div class="mt-3 textCenter">
                         <img src="/media/images/v-mama-pacha-de.png" alt="" id="hoja-der">
                         <input class=" boxshadow p-12-80 bgc_button marron_mama fontRosa_regular_italic mt-3" type="submit" name="Enviar">
                         <img src="/media/images/v-mama-pacha-iz.png" alt="" id="hoja-izq">
@@ -80,13 +83,9 @@
 			</form>
 		</div>
 	</main>
-    <footer>
-        <div class="gray2_letter fontS_regular">
-            <p class="textCenter ">© 2020 Derechos reservados MamáPacha website</p>
-        </div>
-    </footer>
     <!--Scripts js-->  
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>  
     <script src="js/script.js"></script>    
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>

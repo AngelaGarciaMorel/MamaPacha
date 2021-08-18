@@ -140,15 +140,6 @@ a {
 .h-100{
     height: 100%;
 }
-.p-24{
-    padding: 24.5px;
-}
-.p-34{
-    padding: 34px;
-}
-.p-5-em{
-    padding: 5em;
-}
 .p-5-em{
     padding: 5em;
 }
@@ -158,6 +149,10 @@ a {
 .p-3-em{
     padding: 3em;
 }
+.pt-3{
+    padding-top: 3px;
+}
+
 .mt-3{
     margin-top: 3em!important;
 }
@@ -312,7 +307,7 @@ a {
     grid-template-columns: 50% 50%;
     grid-template-areas: 
     'fotoGeo titGeo'
-    'fotoGeo descGeo';
+    'fotoGeo infoGeo';
 }
 .titGeo{
     grid-area: titGeo;
@@ -323,30 +318,33 @@ a {
 .fotoGeo{
     grid-area: fotoGeo;
 }
-.descGeo{
-    grid-area: descGeo;
+.infoGeo{
+    grid-area: infoGeo;
 }
-#hoja-der {
-    visibility: hidden;
-}
-#hoja-izq {
-    visibility: hidden;
-}
+
 $breakpoint-tablet: 768px;
 @media (max-width: $breakpoint-tablet) {
     .containter_grid_main{
         display: grid;
+        gap: 0;
         grid-template-columns: 100%;
         grid-template-areas: 
-        'logoMain'
+        'cardGeo'
         'parrafoMamaPacha';
     }
     .parrafo_mama_pacha{
         grid-area: parrafoMamaPacha;
         background: rgba(196, 196, 196, 0.1);
-        margin: 2em;
-    }
+        padding: 1em;
 
+    }
+    .font_size-xl {
+        font-size: large;
+        text-align: center;
+    }
+    .f-3-5{
+        font-size: xx-large;
+    }
     .grid-terapias{
         display: grid;
         grid-template-columns: 100%;
@@ -356,34 +354,40 @@ $breakpoint-tablet: 768px;
     }
     .basada_en_plantas{
         grid-area: basadaEnPlantas;
-        margin: 1em;
+        
     }
     .embarazo{
         grid-area: embarazo;
-        margin: 1em;
     }
+    .text-left{
+        text-align: center !important;
+        font-size: large;
+    }
+    .p-3-em {
+        padding: 1em;
+    }    
     .grid-ayurveda{
         display: grid;
         grid-template-columns: 100%;
+        gap: 0;
         grid-template-areas: 
         'fotoPiedra'
         'ayurvExpl';
     }
     .ayurvExpl{
         grid-area: ayurvExpl;
-        margin: 1em;
     }
     .fotoPiedra{
         grid-area: fotoPiedra;
-        margin: 1em;
     }
     .grid-geo{
         display: grid;
         grid-template-columns: 100%;
+        gap: 0;
         grid-template-areas:
-        'fotoGeo' 
         'titGeo'
-        'descGeo';
+        'fotoGeo' 
+        'infoGeo';
     }
     .titGeo{
         grid-area: titGeo;
@@ -391,9 +395,8 @@ $breakpoint-tablet: 768px;
             font-size: 2em;
         }
     }
-    .descGeo{
-        grid-area: descGeo;
-        margin: 1em;
+    .infoGeo{
+        grid-area: infoGeo;
     }
     .bkg-imagen {
         background-image: none;
@@ -401,16 +404,21 @@ $breakpoint-tablet: 768px;
     .bkg-imagenC {
         background-image: none;
     }
-    #hoja-der {
-        visibility: visible;
-    }
-    #hoja-izq {
-        visibility: visible;
-    }
     .p-12-80 {
         padding: 12px 20px 12px 20px;
     }
     .mt-10 {
         margin-top: 5em;
+    }
+    #hoja-der {
+        width: 80.93px;
+        height: 80.93px;
+    }
+    #hoja-izq{
+        width: 80.93px;
+        height: 80.93px;
+    }
+    .mt-0{
+        margin-top: 1em !important;
     }
 }
