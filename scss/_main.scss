@@ -317,6 +317,7 @@ $breakpoint-tablet: 768px;
 @media (max-width: $breakpoint-tablet) {
     .containter_grid_main{
         display: grid;
+        padding: 0;
         gap: 0;
         grid-template-columns: 100%;
         grid-template-areas: 
@@ -327,7 +328,6 @@ $breakpoint-tablet: 768px;
         grid-area: parrafoMamaPacha;
         background: rgba(196, 196, 196, 0.1);
         padding: 1em;
-
     }
     .font_size-xl {
         font-size: large;
@@ -345,6 +345,9 @@ $breakpoint-tablet: 768px;
     }
     .basada_en_plantas{
         grid-area: basadaEnPlantas;
+        p{
+            margin-bottom: 0.1em!important;
+        }
         
     }
     .embarazo{
@@ -411,5 +414,17 @@ $breakpoint-tablet: 768px;
     }
     .mt-0{
         margin-top: 1em !important;
+    }
+    .p-0{
+        padding: 0 !important;
+    }
+    .mt-14{
+        margin-top: 5em !important;
+    }
+    .mt-16{
+        margin-top: 5em !important;
+    }
+    .mb-05{
+        margin-bottom: 0.5em !important;
     }
 }
