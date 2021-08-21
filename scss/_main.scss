@@ -134,6 +134,9 @@ a {
 .p-12-80{
     padding: 12px 80px 12px 80px;
 }
+.p-l3{
+    padding: 12px 80px 12px 80px;
+}
 .p-3-em{
     padding: 3em;
 }
@@ -419,9 +422,9 @@ $breakpoint-tablet: 768px;
     .p-12-80 {
         padding: 12px 20px 12px 20px;
     }
-    .pl-3{
-        padding-left: 60px !important;
-        padding-right: 60px !important;
+    .p-l3{
+        padding-left: 60px;
+        padding-right: 60px;
     }
     .mt-10 {
         margin-top: 5em;
