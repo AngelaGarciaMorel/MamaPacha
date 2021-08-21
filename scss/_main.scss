@@ -335,6 +335,9 @@ a {
 .m-2-8{
     margin-top: 2.8em!important;
 }
+.resize-none{
+    resize: none;
+}
 $breakpoint-tablet: 768px;
 @media (max-width: $breakpoint-tablet) {
     .nav_social_media_list{
