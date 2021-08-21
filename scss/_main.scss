@@ -470,3 +470,22 @@ $breakpoint-tablet: 768px;
         padding: 0 0 !important;
     }
 }
+$breakpoint-cel: 363px;
+@media (max-width: $breakpoint-cel){
+    .cel{
+        display: flex!important;
+        flex-direction: column!important;
+        justify-content: center!important;
+        align-items: center!important;
+    }
+    .enviar-cel{
+        display: flex!important;
+        flex-direction: row!important;
+        justify-content: center!important;
+        align-items: center!important;
+        input{
+            margin: 0!important;
+            height: 40px;
+        }
+    }
+}
