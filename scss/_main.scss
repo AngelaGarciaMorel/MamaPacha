@@ -332,9 +332,20 @@ a {
 .infoGeo{
     grid-area: infoGeo;
 }
-
+.m-2-8{
+    margin-top: 2.8em!important;
+}
 $breakpoint-tablet: 768px;
 @media (max-width: $breakpoint-tablet) {
+    .nav_social_media_list{
+        justify-content: center;
+        li{
+            margin: 1.5em 2em;
+        }
+    }
+    main{
+        margin-top: 6em!important;
+    }
     .containter_grid_main{
         display: grid;
         padding: 0;
