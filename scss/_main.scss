@@ -143,6 +143,9 @@ a {
 .m-0{
     margin: 0;
 }
+.mt-1{
+    margin-top: 1.5em !important;
+}
 .mt-3{
     margin-top: 3em!important;
 }
@@ -384,6 +387,7 @@ $breakpoint-tablet: 768px;
     }
     .ayurvExpl{
         grid-area: ayurvExpl;
+        padding: 1.2em;
     }
     .fotoPiedra{
         grid-area: fotoPiedra;
@@ -440,5 +444,8 @@ $breakpoint-tablet: 768px;
     }
     .mb-05{
         margin-bottom: 0.5em !important;
+    }
+    .p-2-em-lateral{
+        padding: 0 0 !important;
     }
 }

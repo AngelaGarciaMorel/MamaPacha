@@ -17,12 +17,12 @@ $telefono = $_POST["phone"];
 
 $mensaje = $_POST["message"];
 
-$destinatario = "seran.angie@gmail.com"; // Correo al que llegará la consulta //
+$destinatario = "mamapacha.pna@gmail.com"; // Correo al que llegará la consulta //
 
 // Datos de la cuenta de correo utilizada para enviar vía SMTP
 $smtpHost = "smtp.gmail.com";  // Dominio alternativo brindado en el email de alta
-$smtpUsuario = "fabichlo89@gmail.com";  // Mi cuenta de correo
-$smtpClave = "Fabi1989#";  // Mi contraseña
+$smtpUsuario = "mamapacha.pna@gmail.com";  // Mi cuenta de correo
+$smtpClave = "Francesco.2019";  // Mi contraseña
 
 $mail = new PHPMailer(true);
 $mail->IsSMTP();
