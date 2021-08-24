@@ -338,6 +338,17 @@ a {
 .resize-none{
     resize: none;
 }
+$breakpoint-notebook: 1632px;
+@media (max-width: $breakpoint-notebook) {
+    .card_geo{
+        height: 500px!important;
+        margin-top: 4em;
+    }
+    .card_geo2{
+        height: 400px!important;
+        margin-top: 4em;
+    }
+}
 $breakpoint-tablet: 768px;
 @media (max-width: $breakpoint-tablet) {
     .nav_social_media_list{
